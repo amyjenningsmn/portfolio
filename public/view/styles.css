@@ -1,3 +1,46 @@
 body {
-  color: red;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0 50px;
+}
+
+h1, h2, h3 {
+  font-family: 'Bungee Hairline', cursive;
+}
+
+.header {
+  margin-top: 50px;
+
+}
+
+.header ul {
+  padding-left: 0px;
+}
+
+.header p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px 40px;
+  text-align: justify;
+}
+
+.icons li {
+	display: inline-block;
+	/*background: #535A69;*/
+	width: 40px;
+	height: 40px;
+	transition: background 0.3s ease;
+	border-radius: 50%;
+  margin: 0 10px;
+}
+
+.icons li a {
+  color: #535A69;
+  font-size: 26px;
+  position: relative;
+	top: 1px;
+}
+
+.icons li a:hover {
+  color: #999cab;
+  transition: color 0.2s ease;
 }
