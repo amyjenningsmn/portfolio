@@ -1,4 +1,4 @@
-var app = angular.module('portfolioApp', []);
+var app = angular.module('portfolioApp', ['ngAnimate']);
 
 app.controller('MainController', ['$http', function($http) {
 
