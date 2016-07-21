@@ -8,6 +8,8 @@ h1, h2, h3 {
   font-family: 'Bungee Hairline', cursive;
 }
 
+
+
 .header {
   margin-top: 25px;
 
@@ -43,6 +45,24 @@ h1, h2, h3 {
 .icons li a:hover {
   color: #999cab;
   transition: color 0.2s ease;
+}
+
+.innerDisplay {
+  text-align: justify;
+}
+
+.btn-link, a {
+  color: #393c42;
+}
+
+.btn-link:hover, a:hover {
+  color: #999cab;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.italic {
+  font-style: italic;
 }
 
 /*!
