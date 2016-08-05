@@ -2,32 +2,103 @@
 <html ng-app="portfolioApp">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <title>Amy Jennings</title>
-    <script src="../vendors/jquery/jquery.min.js"></script>
-    <script src="../vendors/angular/angular.min.js"></script>
-    <script src="../vendors/angular-animate/angular-animate.min.js"></script>
+    <!-- <script src="../vendors/angular/angular.min.js"></script> -->
+    <!-- <script src="../vendors/angular-animate/angular-animate.min.js"></script> -->
     <script src="https://use.fontawesome.com/0e8dbd6cbb.js"></script>
-    <script src="../../client/client.js"></script>
+    <!-- <script src="../../client/client.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body ng-controller="MainController as vm">
-    <div class="container-fluid">
-      <div class="row header">
-        <div class="col-md-12">
+    <header>
+  		<nav class="navbar navbar-default navbar-fixed-top text-center">
+  			<div class="container-fluid">
+  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+  	        <span class="sr-only">Toggle navigation</span>
+  	        <span class="icon-bar"></span>
+  	        <span class="icon-bar"></span>
+  	        <span class="icon-bar"></span>
+        	</button>
+
+  				<div class="collapse navbar-collapse" id="navbar">
+  		 			<ul class="nav navbar-nav">
+              <li><a class="navbar-brand" href="#home">Amy Jennings</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+  						<li><a href="#work">Work</a></li>
+  						<li><a href="#resume">Resume</a></li>
+  						<li><a href="#contact">Contact</a></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</nav>
+
+      <section id="home">
+  		 <div class="jumbotron text-center">
+        <div class="container-fluid">
           <h1>Amy Jennings</h1>
-          <h2>Web Developer</h2>
-          <ul class="icons">
-            <li><a href="https://github.com/amyjenningsmn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/amy-jennings-00447610a" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-            <li><a href="mailto:amyjenningsmn@gmail.com" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-          </ul>
-          <p>Cupcake ipsum dolor sit amet. Lemon drops cake lemon drops fruitcake gummies. Ice cream tiramisu halvah donut brownie powder candy ice cream jelly. Dragée cheesecake toffee cake jelly-o sesame snaps brownie. Gingerbread candy ice cream halvah caramels. Sweet marzipan tiramisu croissant cupcake. Topping tart muffin oat cake cotton candy sweet cake. Gummies marzipan cookie toffee sesame snaps gingerbread powder pudding. Lollipop sesame snaps soufflé halvah liquorice cupcake chocolate. Tootsie roll cotton candy tiramisu cake. Tart muffin sugar plum oat cake wafer sesame snaps icing. Danish cotton candy croissant jujubes macaroon jujubes cake tart.</p>
+            <p>Front End | UX | JavaScript</p>
+            <p>Development</p>
+            <ul class="icons">
+              <li><a href="https://github.com/amyjenningsmn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/amy-jennings-00447610a" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+              <li><a href="mailto:amyjenningsmn@gmail.com" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+            </ul>
         </div>
       </div>
+     </section>
+  	</header>
+
+    <section id="banner">
+  	 <div class="container">
+  			<div class="row">
+  				<!-- title column -->
+  				<div class="col-md-12">
+  					<h2>Hello, I'm Amy. I’m endlessly fascinated by great user experiences.</h2>
+            <p>I'm a people person. It's something I take with me into every endeavor. Good design and development can make people's lives better, and that's something I care about. Doesn't matter if it's a huge rebuild or a simple refresh, good experiences add up.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <h2>Skills Overview</h2>
+          <div class="col-md-4">
+            <h3>Front End</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>UX</h3>
+            <ul>
+              <li>Information Architecture</li>
+              <li>Content Strategy</li>
+              <li>Wireframing</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>JavaScript</h3>
+            <ul>
+              <li>Angular</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+        </div>
+        <a class="btn btn-default" href="#home" role="button">Full Resume</a>
+      </div>
+    </section>
+
+    <!-- <section id="nileDisplay">
+     <div class="container">
       <div class="row display" ng-show="vm.nile">
         <div class="col-md-6">
           <img src="images/nile300x300.png"class="img-responsive img-thumbnail center-block" alt="First Project">
@@ -36,50 +107,158 @@
           <h3>Nile of the North</h3>
           <p class="innerDisplay">Interactive map of North Minneapolis displaying food related resources by category.</p>
           <p class="innerDisplay">Users have the ability to create their own resources and associated content. Shared knowledge of these local resources encourages connection and use within the community.</p>
-          <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+          <p class="innerDisplay">Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
           <button type="button" class="btn btn-link"><a href="http://north-nile.herokuapp.com/" target="_blank">Live Site</a></button> //
           <button type="button" class="btn btn-link" ng-click="vm.closeDisplay()">Back to Work</button>
         </div>
+       </div>
       </div>
-      <div class="row display" ng-show="vm.prompted">
+     </section>
+
+     <section id="promptedDisplay">
+      <div class="container">
+       <div class="row display" ng-show="vm.prompted">
         <div class="col-md-6">
           <img src="images/prompted300x300.png"class="img-responsive img-thumbnail center-block" alt="Second Project">
         </div>
         <div class="col-md-6">
           <h3>Prompted</h3>
-          <p class="innerDisplay">Built as my solo project while at Prime Digital Academy using the MEAN stack, Bootstrap, Summernote, and the "I Need a Prompt" API.</p>
           <p class="innerDisplay">Users are able to generate prompts, write in a rich-text environment, and save to a personal library, all in one application.</p>
+          <p class="innerDisplay">Built as my solo project while at Prime Digital Academy using the MEAN stack, Bootstrap, Summernote, and the "I Need a Prompt" API.</p>
           <p class="italic">Credentials for Prompted's live site: log in as "Amy" with the password "go".</p>
           <button type="button" class="btn btn-link"><a href="http://prompted-project.herokuapp.com/" target="_blank">Live Site</a></button> //
           <button type="button" class="btn btn-link" ng-click="vm.closeDisplay()">Back to Work</button>
         </div>
       </div>
-      <div class="row display" ng-show="vm.february">
+     </div>
+    </section>
+
+    <section id="febDisplay">
+     <div class="container">
+       <div class="row display" ng-show="vm.february">
         <div class="col-md-6">
           <img src="images/feb300x300.png"class="img-responsive img-thumbnail center-block" alt="Third Project">
         </div>
         <div class="col-md-6">
           <h3>February</h3>
-          <p>Here is the description of February</p>
+          <p class="innerDisplay">Website of local Minneapolis band to coincide with re-issue of their last CD.</p>
+          <p class="innerDisplay">Built during Front End Developer Series of classes with Girl Develop It in Minneapolis using HTML5, CSS3, Bootstrap and JavaScript.</p>
           <button type="button" class="btn btn-link"><a href="http://thebandfebruary.com/" target="_blank">Live Site</a></button> //
           <button type="button" class="btn btn-link" ng-click="vm.closeDisplay()">Back to Work</button>
         </div>
       </div>
-      <div class="row work">
-        <h2>Work</h2>
-        <div class="col-md-4">
-          <img src="images/nile300x300.png"class="img-responsive img-thumbnail center-block" alt="First Project" ng-click="vm.nileShow()">
-          <h3>Nile of the North</h3>
+     </div>
+    </section> -->
+
+    <section id="work">
+     <div class="container-fluid nileTitle">
+      <div class="row">
+        <div class="col-md-12">
+        <!-- <div class="col-md-4">
+          <img src="images/nile300x300.png"class="img-responsive img-thumbnail center-block" alt="First Project" ng-click="vm.nileShow()"> -->
+          <h2>Nile of the North</h2>
+          <h3>UX Design, Full Stack Development for Minneapolis Non-Profit Interactive Food Source Map</h3>
         </div>
-        <div class="col-md-4">
+      </div>
+    </div>
+    <div class="container content">
+     <div class="row">
+       <div class="col-md-12">
+         <h2>Project</h2>
+           <p>Interactive map of North Minneapolis displaying food related resources by category.</p>
+           <p>Users have the ability to create their own resources and associated content. Shared knowledge of these local resources encourages connection and use within the community.</p>
+         <h2>My Role</h2>
+           <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+         <h2>Technologies Used</h2>
+           <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+       </div>
+     </div>
+   </div>
+   <div class="contentButtons">
+     <a class="btn btn-default" href="http://north-nile.herokuapp.com/" target="_blank" role="button">Website</a>
+     <a class="btn btn-default" href="https://github.com/amyjenningsmn/north-nile" target="_blank" role="button">GitHub</a>
+   </div>
+
+   <div class="container-fluid promptedTitle">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Prompted</h2>
+        <h3>UX Design, Full Stack Development for Web App Writing Prompt Generator and Environment</h3>
+      </div>
+    </div>
+   </div>
+   <div class="container content">
+   <div class="row">
+     <div class="col-md-12">
+       <h2>Project</h2>
+         <p>Users are able to generate prompts, write in a rich-text environment, and save to a personal library, all in one application.</p>
+       <h2>My Role</h2>
+         <p>Built as a solo project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+       <h2>Technologies Used</h2>
+         <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+     </div>
+    </div>
+   </div>
+   <div class="contentButtons">
+     <a class="btn btn-default" href="http://prompted-project.herokuapp.com/" target="_blank" role="button">Website</a>
+     <a class="btn btn-default" href="https://github.com/amyjenningsmn/solo-project-prompted" target="_blank" role="button">GitHub</a>
+   </div>
+
+   <div class="container-fluid febTitle">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>February</h2>
+        <h3>UX Design, Front End Development for Webite of Minneapolis band February</h3>
+      </div>
+    </div>
+   </div>
+   <div class="container content">
+   <div class="row">
+     <div class="col-md-12">
+       <h2>Project</h2>
+        <p>Website of local Minneapolis band to coincide with re-issue of their last CD.</p>
+       <h2>My Role</h2>
+        <p>Built during Front End Developer Series of classes with Girl Develop It in Minneapolis using HTML5, CSS3, Bootstrap and JavaScript.</p>
+       <h2>Technologies Used</h2>
+        <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+     </div>
+    </div>
+   </div>
+   <div class="contentButtons">
+     <a class="btn btn-default" href="http://thebandfebruary.com/" target="_blank" role="button">Website</a>
+     <a class="btn btn-default" href="https://github.com/amyjenningsmn/thebandfebruary" target="_blank" role="button">GitHub</a>
+   </div>
+
+
+        <!-- <div class="col-md-4">
           <img src="images/prompted300x300.png" class=" img-responsive img-thumbnail center-block" border="5" alt="Second Project" ng-click="vm.promptedShow()">
           <h3>Prompted</h3>
         </div>
         <div class="col-md-4">
-          <img src="images/feb300x300.png"class="img-responsive img-thumbnail center-block" alt="Third Project"ng-click="vm.februaryShow()">
+          <a href="#febDisplay"><img src="images/feb300x300.png"class="img-responsive img-thumbnail center-block" alt="Third Project" ng-click="vm.februaryShow()"></a>
           <h3>February</h3>
         </div>
       </div>
-    </div>
+     </div> -->
+   </section>
+
+   <footer id="contact">
+     <div class="container-fluid text-center">
+       <h2>Interested in Working Together?</h2>
+       <h3>Currently seeking Developer / UX opportunity</h3>
+         <p class="email"><a href="mailto:amyjenningsmn@gmail.com" target="_top">amyjenningsmn@gmail.com</a></p>
+
+         <ul class="icons">
+           <li><a href="https://github.com/amyjenningsmn" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+           <li><a href="https://www.linkedin.com/in/amy-jennings-00447610a" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+         </ul>
+
+       <small>&copy; Amy Jennings 2016 </small>
+
+     </div>
+   </footer>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.js"></script>
+
   </body>
   </html>

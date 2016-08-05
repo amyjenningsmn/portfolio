@@ -1,0 +1,290 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Bungee Hairline', cursive;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-left: 0px;
+  list-style: none;
+}
+
+a.btn.btn-default {
+  font-size: 1.2em;
+  background-color: #bac6b6;
+  letter-spacing: 4px;
+}
+
+a.btn.btn-default:hover {
+  font-size: 1.2em;
+  background-color: #fff8f6;
+  transition: background 0.3s ease;
+}
+
+.navbar {
+  background: #fff8f6;
+  border-bottom: #7e6a71;
+}
+
+.jumbotron {
+    background-image: url("images/deskLt.png");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.jumbotron h1, #work h2 {
+  padding-top: 125px;
+  font-size: 8em;
+}
+
+@media(max-width: 768px) {
+  .jumbotron h1 {
+    padding-top: 200px;
+    font-size: 6em;
+  }
+
+  #work h2 {
+    padding-top: 115px;
+    font-size: 6em;
+  }
+}
+
+@media(max-width: 500px) {
+  .jumbotron h1 {
+    padding-top: 200px;
+    font-size: 4em;
+  }
+
+  #work h2 {
+    font-size: 4em;
+  }
+}
+
+.jumbotron p {
+  font-size: 4em;
+}
+
+@media(max-width: 768px) {
+  .jumbotron p {
+    font-size: 2.5em;
+  }
+}
+
+.icons li {
+	display: inline-block;
+	background: #535A69;
+	width: 40px;
+	height: 40px;
+	transition: background 0.3s ease;
+	border-radius: 50%;
+  margin: 0 10px;
+}
+
+.icons li a {
+  color: #fff;
+  font-size: 26px;
+  position: relative;
+	top: 1px;
+}
+
+.icons li:hover {
+  background: #999cab;
+  transition: background 0.2s ease;
+}
+
+#banner {
+  margin-top: 80px;
+}
+
+#banner h2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#banner p {
+  margin: 0px 60px;
+  text-align: justify;
+}
+
+#skills {
+  margin-bottom: 40px;
+}
+
+#skills h3 {
+  letter-spacing: 3px;
+}
+
+
+#skills li {
+  letter-spacing: 2px;
+}
+
+
+#skills a {
+  margin-top: 25px;
+}
+
+
+.nileTitle {
+  background-image: url("images/basketLt.png");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.promptedTitle {
+  background-image: url("images/promptedMac.png");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.febTitle {
+  background-image: url("images/febFlowers.png");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+
+#work .content {
+  padding: 0px 200px 40px;
+  text-align: left;
+}
+
+@media(max-width:1199px) {
+  #work .content {
+    padding: 0px 35px 40px;
+  }
+}
+
+#work .content h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  letter-spacing: 3px;
+  text-align: left;
+  padding-top: 0px;
+}
+
+.contentButtons a{
+  margin: 0px 30px 40px;
+}
+
+#contact {
+  background-color: #e2cdc7;
+  height: 400px;
+}
+
+#contact h2 {
+  color: white;
+  font-size: 2.5em;
+  padding-top: 50px;
+}
+
+#contact h3 {
+  margin-bottom: 20px;
+}
+
+.email {
+  margin-bottom: 15px;
+}
+
+.email a{
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+.email a:hover {
+  color: #999cab;
+  transition: color 0.2s ease;
+}
+
+
+
+/*!
+* animate.css -http://daneden.me/animate
+* Version - 3.5.1
+* Licensed under the MIT license - http://opensource.org/licenses/MIT
+*
+* Copyright (c) 2016 Daniel Eden
+*/
+
+/* ANIMATIONS (FROM ANIMATE.CSS) ======================== */
+
+/* ::: fadeIn ::: */
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* ::: fadeOut ::: */
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+/* ng-hide-add and ng-hide-remove are tied to ng-hide and ng-show */
+.ng-hide-add {
+  amination: 1s fadeOut ease;
+}
+
+.ng-hide-remove {
+  animation: 1s fadeIn ease;
+}
