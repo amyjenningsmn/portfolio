@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html ng-app="portfolioApp">
+<html>
   <head>
     <meta charset="utf-8" />
-    <!-- <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Amy Jennings</title>
-    <!-- <script src="../vendors/angular/angular.min.js"></script> -->
-    <!-- <script src="../vendors/angular-animate/angular-animate.min.js"></script> -->
     <script src="https://use.fontawesome.com/0e8dbd6cbb.js"></script>
-    <!-- <script src="../../client/client.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body ng-controller="MainController as vm">
+  <body>
     <header>
   		<nav class="navbar navbar-default navbar-fixed-top text-center">
   			<div class="container-fluid">
@@ -30,7 +27,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
   						<li><a href="#work">Work</a></li>
-  						<li><a href="#resume">Resume</a></li>
+  						<!-- <li><a href="#resume">Resume</a></li> -->
   						<li><a href="#contact">Contact</a></li>
   					</ul>
   				</div>
@@ -56,10 +53,11 @@
     <section id="banner">
   	 <div class="container">
   			<div class="row">
-  				<!-- title column -->
   				<div class="col-md-12">
   					<h2>Hello, I'm Amy. I’m endlessly fascinated by great user experiences.</h2>
-            <p>I'm a people person. It's something I take with me into every endeavor. Good design and development can make people's lives better, and that's something I care about. Doesn't matter if it's a huge rebuild or a simple refresh, good experiences add up.</p>
+            <p><span>I'm a junior developer</span>, recently graduated from Prime Digital Academy with a focus on Full Stack Development. While at school I fell in love with UX and Front End and am currently freelancing and in a UX mentorship program.</p></br>
+            <p><span>I'm a people person.</span> It's something I take with me into every endeavor. Good design and development can make people's lives better, and that's something I care about.</p></br>
+            <p><span>I'm looking to work</span> with a team of people who I can support and be supported by. If you're interested in talking more, please contact me. Thanks!</p>
           </div>
         </div>
       </div>
@@ -68,94 +66,47 @@
     <section id="skills">
       <div class="container">
         <div class="row">
-          <h2>Skills Overview</h2>
-          <div class="col-md-4">
+          <h2>Focused Skills Overview</h2>
+          <div class="col-sm-4">
             <h3>Front End</h3>
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Bootstrap</li>
+              <li>Angular Material</li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <h3>UX</h3>
             <ul>
               <li>Information Architecture</li>
               <li>Content Strategy</li>
+              <li>Site Mapping</li>
               <li>Wireframing</li>
             </ul>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <h3>JavaScript</h3>
             <ul>
               <li>Angular</li>
               <li>jQuery</li>
+              <li>Vanilla JavaScript</li>
+
             </ul>
           </div>
         </div>
-        <a class="btn btn-default" href="#home" role="button">Full Resume</a>
+        <!-- <a class="btn btn-default" href="#home" role="button">Full Resume</a> -->
       </div>
     </section>
+    <!-- <section id="resume">
+      Resume here
 
-    <!-- <section id="nileDisplay">
-     <div class="container">
-      <div class="row display" ng-show="vm.nile">
-        <div class="col-md-6">
-          <img src="images/nile300x300.png"class="img-responsive img-thumbnail center-block" alt="First Project">
-        </div>
-        <div class="col-md-6">
-          <h3>Nile of the North</h3>
-          <p class="innerDisplay">Interactive map of North Minneapolis displaying food related resources by category.</p>
-          <p class="innerDisplay">Users have the ability to create their own resources and associated content. Shared knowledge of these local resources encourages connection and use within the community.</p>
-          <p class="innerDisplay">Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
-          <button type="button" class="btn btn-link"><a href="http://north-nile.herokuapp.com/" target="_blank">Live Site</a></button> //
-          <button type="button" class="btn btn-link" ng-click="vm.closeDisplay()">Back to Work</button>
-        </div>
-       </div>
-      </div>
-     </section>
-
-     <section id="promptedDisplay">
-      <div class="container">
-       <div class="row display" ng-show="vm.prompted">
-        <div class="col-md-6">
-          <img src="images/prompted300x300.png"class="img-responsive img-thumbnail center-block" alt="Second Project">
-        </div>
-        <div class="col-md-6">
-          <h3>Prompted</h3>
-          <p class="innerDisplay">Users are able to generate prompts, write in a rich-text environment, and save to a personal library, all in one application.</p>
-          <p class="innerDisplay">Built as my solo project while at Prime Digital Academy using the MEAN stack, Bootstrap, Summernote, and the "I Need a Prompt" API.</p>
-          <p class="italic">Credentials for Prompted's live site: log in as "Amy" with the password "go".</p>
-          <button type="button" class="btn btn-link"><a href="http://prompted-project.herokuapp.com/" target="_blank">Live Site</a></button> //
-          <button type="button" class="btn btn-link" ng-click="vm.closeDisplay()">Back to Work</button>
-        </div>
-      </div>
-     </div>
-    </section>
-
-    <section id="febDisplay">
-     <div class="container">
-       <div class="row display" ng-show="vm.february">
-        <div class="col-md-6">
-          <img src="images/feb300x300.png"class="img-responsive img-thumbnail center-block" alt="Third Project">
-        </div>
-        <div class="col-md-6">
-          <h3>February</h3>
-          <p class="innerDisplay">Website of local Minneapolis band to coincide with re-issue of their last CD.</p>
-          <p class="innerDisplay">Built during Front End Developer Series of classes with Girl Develop It in Minneapolis using HTML5, CSS3, Bootstrap and JavaScript.</p>
-          <button type="button" class="btn btn-link"><a href="http://thebandfebruary.com/" target="_blank">Live Site</a></button> //
-          <button type="button" class="btn btn-link" ng-click="vm.closeDisplay()">Back to Work</button>
-        </div>
-      </div>
-     </div>
     </section> -->
 
     <section id="work">
      <div class="container-fluid nileTitle">
       <div class="row">
         <div class="col-md-12">
-        <!-- <div class="col-md-4">
-          <img src="images/nile300x300.png"class="img-responsive img-thumbnail center-block" alt="First Project" ng-click="vm.nileShow()"> -->
           <h2>Nile of the North</h2>
           <h3>UX Design, Full Stack Development for Minneapolis Non-Profit Interactive Food Source Map</h3>
         </div>
@@ -165,19 +116,63 @@
      <div class="row">
        <div class="col-md-12">
          <h2>Project</h2>
-           <p>Interactive map of North Minneapolis displaying food related resources by category.</p>
-           <p>Users have the ability to create their own resources and associated content. Shared knowledge of these local resources encourages connection and use within the community.</p>
+           <p>Creation of interactive map of North Minneapolis displaying food related resources by category.</p>
+           <p>Users have the ability to create their own resources and associated content.</p>
+           <p>Shared knowledge of these local resources encourages connection and use within the community.</p>
          <h2>My Role</h2>
-           <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+           <p>One of a team of five developers while studying Full Stack Development at Prime Digital Academy.</p>
+           <p>Met with clients to determine user needs, personas, scope, and MVP. Presented final project to over 100 people.</p>
+           <p>My main roles were in client interaction,   site mapping and design, front end development, and client-side engineering.</p>
          <h2>Technologies Used</h2>
-           <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+          <div class="row technologies">
+            <div class="col-sm-4">
+              <p>PostgreSQL</p>
+              <p>Express.js</p>
+              <p>AngularJS</p>
+              <p>Node.js</p>
+            </div>
+            <div class="col-sm-4">
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>Angular Material</p>
+              <p>Mapbox</p>
+            </div>
+            <div class="col-sm-4">
+              <p>Passport</p>
+              <p>bcrypt</p>
+              <p>Leaflet</p>
+              <p>Heroku</p>
+            </div>
+          </div>
        </div>
      </div>
    </div>
-   <div class="contentButtons">
-     <a class="btn btn-default" href="http://north-nile.herokuapp.com/" target="_blank" role="button">Website</a>
-     <a class="btn btn-default" href="https://github.com/amyjenningsmn/north-nile" target="_blank" role="button">GitHub</a>
-   </div>
+   <div class="container nile display">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/nilehome.png" class="img-responsive img-rounded center-block" alt="Nile of the North home page">
+          <p>Home page introducing users to site</p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/nileMap.png" class="img-responsive img-rounded center-block" alt="Nile of the North map page">
+          <p>Interactive map of North Minneapolis food resources</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/nileMapDrawer.png" class="img-responsive img-rounded center-block" alt="Nile of the North map drawer">
+          <p>Drawer display when food resource is clicked on</p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/nileAdmin.png" class="img-responsive img-rounded center-block" alt="Nile of the North admin page">
+          <p>Administrative section of site</p>
+        </div>
+      </div>
+      <div class="contentButtons">
+        <a class="btn btn-default" href="http://north-nile.herokuapp.com/" target="_blank" role="button">Website</a>
+        <a class="btn btn-default" href="https://github.com/amyjenningsmn/north-nile" target="_blank" role="button">GitHub</a>
+      </div>
+    </div>
 
    <div class="container-fluid promptedTitle">
     <div class="row">
@@ -188,23 +183,67 @@
     </div>
    </div>
    <div class="container content">
-   <div class="row">
+    <div class="row">
      <div class="col-md-12">
        <h2>Project</h2>
-         <p>Users are able to generate prompts, write in a rich-text environment, and save to a personal library, all in one application.</p>
+         <p>Users are able to generate writing prompts and write in a rich-text environment.</p>
+         <p>Selections are saved to a private personal library.</p>
        <h2>My Role</h2>
-         <p>Built as a solo project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+         <p>Built as a solo project while studying Full Stack Development at Prime Digital Academy.</p>
+         <p>I came up with concept and design, and brought in an external API to generate prompts.</p>
+         <p>I coded the entire application from front to back end.</p>
        <h2>Technologies Used</h2>
-         <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
+       <div class="row technologies">
+         <div class="col-sm-4">
+           <p>MongoDB</p>
+           <p>Express.js</p>
+           <p>AngularJS</p>
+           <p>Node.js</p>
+         </div>
+         <div class="col-sm-4">
+           <p>HTML5</p>
+           <p>CSS3</p>
+           <p>Bootstrap</p>
+           <p>Summernote</p>
+         </div>
+         <div class="col-sm-4">
+           <p>Passport</p>
+           <p>bcrypt</p>
+           <p>Mongoose</p>
+           <p>GitHub</p>
+         </div>
+       </div>
      </div>
     </div>
    </div>
-   <div class="contentButtons">
-     <a class="btn btn-default" href="http://prompted-project.herokuapp.com/" target="_blank" role="button">Website</a>
-     <a class="btn btn-default" href="https://github.com/amyjenningsmn/solo-project-prompted" target="_blank" role="button">GitHub</a>
-   </div>
+  <div class="container prompted display">
+     <div class="row">
+       <div class="col-md-6">
+         <img src="images/pptHome.png" class="img-responsive img-rounded center-block" alt="Prompted home page">
+         <p>Login page - all passwords encrypted</p>
+       </div>
+       <div class="col-md-6">
+         <img src="images/pptChoose.png" class="img-responsive img-rounded center-block" alt="Prompted choose page">
+         <p>After login, users can choose to write or view their library</p>
+       </div>
+     </div>
+       <div class="row">
+         <div class="col-md-6">
+           <img src="images/pptWrite.png" class="img-responsive img-rounded center-block" alt="Prompted's prompt generator and writing environment">
+           <p>Prompt generator and rich-text writing environment</p>
+         </div>
+         <div class="col-md-6">
+           <img src="images/pptLibrary.png" class="img-responsive img-rounded center-block" alt="Prompted user library">
+           <p>The user's private library of saved writing selections</p>
+         </div>
+       </div>
+       <div class="contentButtons">
+         <a class="btn btn-default" href="http://prompted-project.herokuapp.com/" target="_blank" role="button">Website</a>
+         <a class="btn btn-default" href="https://github.com/amyjenningsmn/solo-project-prompted" target="_blank" role="button">GitHub</a>
+       </div>
+    </div>
 
-   <div class="container-fluid febTitle">
+  <div class="container-fluid febTitle">
     <div class="row">
       <div class="col-md-12">
         <h2>February</h2>
@@ -216,30 +255,56 @@
    <div class="row">
      <div class="col-md-12">
        <h2>Project</h2>
-        <p>Website of local Minneapolis band to coincide with re-issue of their last CD.</p>
+        <p>Created website for former Minneapolis band to coincide with re-issue of their last CD.</p>
        <h2>My Role</h2>
-        <p>Built during Front End Developer Series of classes with Girl Develop It in Minneapolis using HTML5, CSS3, Bootstrap and JavaScript.</p>
-       <h2>Technologies Used</h2>
-        <p>Built as a team project while studying Full Stack Development at Prime Digital Academy in Bloomington, MN. Key technologies used: PostgreSQL, Express.js, AngularJS, Node.js, and Angular Material among others.</p>
-     </div>
-    </div>
-   </div>
-   <div class="contentButtons">
-     <a class="btn btn-default" href="http://thebandfebruary.com/" target="_blank" role="button">Website</a>
-     <a class="btn btn-default" href="https://github.com/amyjenningsmn/thebandfebruary" target="_blank" role="button">GitHub</a>
-   </div>
-
-
-        <!-- <div class="col-md-4">
-          <img src="images/prompted300x300.png" class=" img-responsive img-thumbnail center-block" border="5" alt="Second Project" ng-click="vm.promptedShow()">
-          <h3>Prompted</h3>
-        </div>
-        <div class="col-md-4">
-          <a href="#febDisplay"><img src="images/feb300x300.png"class="img-responsive img-thumbnail center-block" alt="Third Project" ng-click="vm.februaryShow()"></a>
-          <h3>February</h3>
+        <p>Built during Front End Developer Series of classes with Girl Develop It in Minneapolis.</p>
+        <p>I gathered requirements from band members and designed and built website.</p>
+        <p>Secured domain name and hosting, currently maintain site.</p>
+      <h2>Technologies Used</h2>
+        <div class="row technologies">
+          <div class="col-sm-4">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>Bootstrap</p>
+          </div>
+          <div class="col-sm-4">
+            <p>jQuery</p>
+            <p>Lightbox</p>
+          </div>
+          <div class="col-sm-4">
+            <p>C-Panel</p>
+            <p>Github</p>
+          </div>
         </div>
       </div>
-     </div> -->
+    </div>
+  </div>
+  <div class="container feb display">
+     <div class="row">
+       <div class="col-md-6">
+         <img src="images/febHome.png" class="img-responsive img-rounded center-block" alt="February home page">
+         <p>February home page - scrolling - nav and footer uniform throughout site</p>
+       </div>
+       <div class="col-md-6">
+         <img src="images/febNews.png" class="img-responsive img-rounded center-block" alt="February news page">
+         <p>News page with integrated social media feed</p>
+       </div>
+     </div>
+       <div class="row">
+         <div class="col-md-6">
+           <img src="images/febGallery.png" class="img-responsive img-rounded center-block" alt="February photo gallery">
+           <p>February photo gallery with lightbox modal display</p>
+         </div>
+         <div class="col-md-6">
+           <img src="images/febContact.png" class="img-responsive img-rounded center-block" alt="February contact page">
+           <p>February contact page</p>
+         </div>
+       </div>
+       <div class="contentButtons">
+          <a class="btn btn-default" href="http://thebandfebruary.com/" target="_blank" role="button">Website</a>
+          <a class="btn btn-default" href="https://github.com/amyjenningsmn/thebandfebruary" target="_blank" role="button">GitHub</a>
+       </div>
+    </div>
    </section>
 
    <footer id="contact">
@@ -259,6 +324,5 @@
    </footer>
    <script src="js/jquery.min.js"></script>
    <script src="js/bootstrap.js"></script>
-
   </body>
   </html>

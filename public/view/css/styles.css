@@ -16,9 +16,13 @@ ul {
   list-style: none;
 }
 
+span {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 a.btn.btn-default {
   font-size: 1.2em;
-  background-color: #bac6b6;
   letter-spacing: 4px;
 }
 
@@ -34,7 +38,7 @@ a.btn.btn-default:hover {
 }
 
 .jumbotron {
-    background-image: url("images/deskLt.png");
+    background-image: url("../images/deskLt.png");
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -108,6 +112,7 @@ a.btn.btn-default:hover {
 
 #banner h2 {
   font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
 }
 
 #banner p {
@@ -126,8 +131,8 @@ a.btn.btn-default:hover {
 
 #skills li {
   letter-spacing: 2px;
+  font-size: 1.2em;
 }
-
 
 #skills a {
   margin-top: 25px;
@@ -135,8 +140,8 @@ a.btn.btn-default:hover {
 
 
 .nileTitle {
-  background-image: url("images/basketLt.png");
-  height: 500px;
+  background-image: url("../images/basketLt.png");
+  height: 550px;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -144,8 +149,8 @@ a.btn.btn-default:hover {
 }
 
 .promptedTitle {
-  background-image: url("images/promptedMac.png");
-  height: 500px;
+  background-image: url("../images/promptedMac.png");
+  height: 550px;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -153,8 +158,8 @@ a.btn.btn-default:hover {
 }
 
 .febTitle {
-  background-image: url("images/febFlowers.png");
-  height: 500px;
+  background-image: url("../images/febFlowers.png");
+  height: 550px;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -185,6 +190,18 @@ a.btn.btn-default:hover {
   margin: 0px 30px 40px;
 }
 
+.display {
+  margin-bottom: 80px;
+}
+
+.display img {
+  margin: 20px 0px 10px;
+}
+
+.display a {
+  margin: 20px 20px 0px;
+}
+
 #contact {
   background-color: #e2cdc7;
   height: 400px;
@@ -213,78 +230,4 @@ a.btn.btn-default:hover {
 .email a:hover {
   color: #999cab;
   transition: color 0.2s ease;
-}
-
-
-
-/*!
-* animate.css -http://daneden.me/animate
-* Version - 3.5.1
-* Licensed under the MIT license - http://opensource.org/licenses/MIT
-*
-* Copyright (c) 2016 Daniel Eden
-*/
-
-/* ANIMATIONS (FROM ANIMATE.CSS) ======================== */
-
-/* ::: fadeIn ::: */
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-/* ::: fadeOut ::: */
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut;
-}
-/* ng-hide-add and ng-hide-remove are tied to ng-hide and ng-show */
-.ng-hide-add {
-  amination: 1s fadeOut ease;
-}
-
-.ng-hide-remove {
-  animation: 1s fadeIn ease;
 }
